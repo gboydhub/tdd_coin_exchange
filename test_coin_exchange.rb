@@ -22,12 +22,12 @@ class TestCoinExchange < Minitest::Test
     assert_equal({:dime => 1}, coin_exchange(10))
   end
 
-  def test_returns_quartar
-    assert_equal({:quartar => 1}, coin_exchange(25))
+  def test_returns_quarter
+    assert_equal({:quarter => 1}, coin_exchange(25))
   end
 
   def test_returns_each
-    assert_equal({:quartar => 1, :dime => 1, :nickel => 1, :penny => 1}, coin_exchange(41))
+    assert_equal({:quarter => 1, :dime => 1, :nickel => 1, :penny => 1}, coin_exchange(41))
   end
 
   def test_returns_complex
