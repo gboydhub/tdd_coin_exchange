@@ -13,4 +13,8 @@ class TestCoinExchange < Minitest::Test
   def test_returns_penny
     assert_equal({:penny => 1}, coin_exchange(1))
   end
+
+  def test_returns_nickel
+    assert_equal({:nickel => 1}, coin_exchange(5))
+  end
 end
