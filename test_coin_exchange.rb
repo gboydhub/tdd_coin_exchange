@@ -31,8 +31,8 @@ class TestCoinExchange < Minitest::Test
   end
 
   def test_returns_complex
-    assert_equal({:quarter => 2, :dime => 1, :nickel => 1, :penny => 3}, coin_exchange(68))
-    assert_equal({:dime => 2, :penny => 2}, coin_exchange(22))
-    assert_equal({:quarter => 8, :penny => 2}, coin_exchange(202))
+    assert_equal({:quarters => 2, :dime => 1, :nickel => 1, :pennies => 3}, coin_exchange(68))
+    assert_equal({:dimes => 2, :pennies => 2}, coin_exchange(22))
+    assert_equal({:quarters => 8, :pennies => 2}, coin_exchange(202))
   end
 end
