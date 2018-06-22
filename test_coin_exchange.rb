@@ -21,4 +21,8 @@ class TestCoinExchange < Minitest::Test
   def test_returns_dime
     assert_equal({:dime => 1}, coin_exchange(10))
   end
+
+  def test_returns_quartar
+    assert_equal({:quartar => 1}, coin_exchange(25))
+  end
 end
