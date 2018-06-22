@@ -25,4 +25,8 @@ class TestCoinExchange < Minitest::Test
   def test_returns_quartar
     assert_equal({:quartar => 1}, coin_exchange(25))
   end
+
+  def test_returns_each
+    assert_equal({:quartar => 1, :dime => 1, :nickel => 1, :penny => 1}, coin_exchange(41))
+  end
 end
